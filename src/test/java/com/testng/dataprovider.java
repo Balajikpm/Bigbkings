@@ -22,10 +22,10 @@ public class dataprovider {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		
-		WebElement txtUser = driver.findElement(By.id("email"));
-	txtUser.sendKeys(email);
-		WebElement txtPass = driver.findElement(By.id("pass"));
-		txtPass.sendKeys(pass);
+		//WebElement txtUser = driver.findElement(By.id("email"));
+		driver.findElement(By.id("email")).sendKeys(email);
+	//	WebElement txtPass = driver.findElement(By.id("pass"));
+		driver.findElement(By.id("pass")).sendKeys(pass);
 		
 
 	}
